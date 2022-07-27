@@ -231,6 +231,14 @@ body a{
     font-size: 24px;
     line-height: 28px;
 }
+
+.divider{
+    width: 59.83px;
+    height:4px;
+    background-color: var(--primary);
+    margin: 24px 0;
+
+}
 /*------------- Buttons -------------------*/
 .btn{
     font-family: 'Poppins';
@@ -248,7 +256,7 @@ body a{
     transition: 0.3s all;
 }
 .btn:hover{
-    background-color: var(--secondary);
+    background-color: var(--secondary-color);
     color: var(--white-color);
 }
 
@@ -341,6 +349,24 @@ body a{
 }
 .btn-black-video:hover::before{
     left: -35px;
+}
+.cta-btn:hover{
+    background-color: aliceblue;
+    color: #000000;
+
+}
+.btn-border{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #030303;
+    border: 2px solid #F7AC1B;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    text-align: center;
 }
 
 @media screen and (max-width:1300px){

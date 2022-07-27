@@ -204,4 +204,75 @@ background-color: #F5F5F5;
 }
 .video-section .container .col-left p:not(:first-child){
     margin-top: 10px;
+    margin-bottom: 30px;
 }
+
+/*------------------- Right Video  Column Section -----------*/
+.video-section .container .col-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-section .container .col-right .right-wrapper-video{
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-columns: 500px;
+    grid-template-rows: 250px 250px;
+    max-width: 500px;
+    max-width: 500px;
+
+}
+.video-section .container .col-right .right-wrapper-video .top-img-wrapper{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--primary);
+    border-radius:100px 100px 0px 0px;
+    overflow: hidden;
+}
+.video-section .container .col-right .right-wrapper-video .bottom-img-wrapper{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: var(--primary);
+    border-radius: 0px 0px 100px 100px;
+    overflow: hidden;
+}
+.video-section .container .col-right .right-wrapper-video .bottom-img-wrapper img, .video-section .container .col-right .right-wrapper-video .top-img-wrapper img{
+    object-fit: cover;
+}
+
+
+/* <!----------------------- Tregåsa Section ----------------------> */
+
+.Treg-wrapper{
+    padding: 100px 0;
+    background-image: url('../images/Pattern2.png');
+    background-color: #172933;
+}
+.Treg-wrapper .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Treg-wrapper .container h2, .Treg-wrapper .container p{
+    color: #ffffff;
+} 
+.Treg-wrapper .container p{
+    max-width: 856px;
+}
+.btns-section {
+    width: calc(100% + 360px);
+    margin: 30px -8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btns-section a{
+    width: calc(345px - 8px);
+    margin: 8px 8px 8px;
+}
+/* .btns-section a:not(:last-child){
+    margin-right: 16px;
+} */
