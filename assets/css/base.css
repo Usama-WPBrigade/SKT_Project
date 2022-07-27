@@ -312,6 +312,36 @@ body a{
     left: -35px;
 }
 
+/* Video blackbtn */
+
+.btn-black-video{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #172933;
+    position: relative;
+    margin-left: 40px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.btn-black-video::before{
+    content: url('../images/video-black-icon.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+}
+.btn-black-video:hover{
+    color: var(--primary);
+}
+.btn-black-video:hover::before{
+    left: -35px;
+}
 
 @media screen and (max-width:1300px){
     body h2{
