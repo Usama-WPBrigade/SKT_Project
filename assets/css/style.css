@@ -1,0 +1,17 @@
+
+
+.Snippgympa-wrapper{
+    width: 100%;
+    display:flex;
+    background-color: var(--primary);
+}
+.Snippgympa-wrapper col{
+    width: 50%;
+}
+.Snippgympa-wrapper .col-left{
+    min-height: 450px;
+    background-image: url('../images/section-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
