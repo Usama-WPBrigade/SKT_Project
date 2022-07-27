@@ -1,0 +1,36 @@
+@media screen and (max-width:1200px){
+    .Snippgympa-wrapper .col-right{
+        padding: 30px 50px;
+        
+    }
+}
+
+@media screen and (max-width:1024px){
+    .card-section .cards-wrapper .card{
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+}
+@media screen and (max-width:767px){
+    .Snippgympa-wrapper{
+        flex-direction: column;
+    }
+    .Snippgympa-wrapper .col-left{
+        min-height: 240px;
+    }
+    .Snippgympa-wrapper .col{
+        width: 100%;
+    }
+
+    .card-section .cards-wrapper{
+        width: 100%;
+        margin: 0;
+    }
+    .card-section .cards-wrapper .card{
+        width: 100%;
+        margin: 0;
+    }
+    .Snippgympa-wrapper .col-right{
+        padding: 50px 15px;
+    }
+}

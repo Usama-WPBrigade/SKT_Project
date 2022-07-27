@@ -2,16 +2,206 @@
 
 .Snippgympa-wrapper{
     width: 100%;
+    min-height: 450px;
     display:flex;
     background-color: var(--primary);
 }
-.Snippgympa-wrapper col{
+.Snippgympa-wrapper .col{
     width: 50%;
 }
 .Snippgympa-wrapper .col-left{
-    min-height: 450px;
-    background-image: url('../images/section-banner.jpg');
+    background-image: url('../images/section=-banner.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+.Snippgympa-wrapper .col-right{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 100px;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.Snippgympa-wrapper .col-right h2{
+    max-width: 655px;
+    margin-bottom: 14px;
+}
+.Snippgympa-wrapper .col-right p{
+    max-width: 554px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+.Snippgympa-wrapper .col-right p:not(:first-child){
+    margin-top: 15px;
+}
+
+/* <!------------------ card section --------------------> */
+.card-section{
+ padding: 100px 0;
+}
+.card-section .cards-wrapper{
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-section .cards-wrapper .card{
+    width: calc(33.33% - 30px);
+    margin: 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.3s all;
+    justify-content: flex-start;
+}
+.card-section .cards-wrapper .card:hover{
+background-color: #F5F5F5;
+}
+
+
+.card-section .cards-wrapper .card .card-heading{
+    max-width: 330px;
+    margin-bottom: 16px;
+    color:#172933;
+}
+.card-section .cards-wrapper .card p{
+    color: var(--secondary-color);
+    max-width: 330px;
+}
+
+.card-section .cards-wrapper .card .btn-card{
+    margin-top: 20px;
+}
+
+
+/*---------- Gray Table card -------------------*/
+.gray-card{
+    background-color: #F5F5F5;
+    justify-content: center!important;
+}
+.gray-card:hover{
+    background-color: #ffffff !important;
+}
+
+.cards-wrapper .gray-card .list-main-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+.cards-wrapper .gray-card .list-main-wrapper .list-content{
+    display: flex;
+    align-items: center;
+}
+.cards-wrapper .gray-card .list-main-wrapper .list-content p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #5D6F80;
+}
+.cards-wrapper .gray-card .list-main-wrapper .list-value{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #05213B;
+}
+
+.cards-wrapper .gray-card .list-main-wrapper .list-content .card-icon-wraper{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+.cards-wrapper .gray-card .list-main-wrapper .list-content .card-icon-wraper img{
+    object-fit: contain;
+}
+
+/* <!---------------- Round Card Image section ---------------> */
+.round-card-section{
+    background-image: url('../images/patern.png');
+    background-color: #E6F2F5;
+    padding: 100px 0;
+}
+.round-card-section .container {
+    display: flex;
+}
+.round-card-section .container .col{
+    width: 50%;
+}
+.round-card-section .col-left .images-col-wrapper{
+    height: 470px;
+    display: grid;
+    grid-template-columns:50%;
+    grid-template-rows: 50%;
+    grid-column-gap: 12px;
+    grid-row-gap: 9px;
+}
+.round-card-section .col-left .images-col-wrapper .item1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rebeccapurple;
+    border-radius: 0px 100px;
+    overflow: hidden;
+}
+.round-card-section  .col-left .images-col-wrapper .item2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: red;
+    border-radius: 100px 0px 0px 0px;
+    overflow: hidden;
+}
+.round-card-section  .col-left .images-col-wrapper .item3{
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: #05213B;
+    border-radius: 100px 0px;
+    overflow: hidden;
+
+}
+.item1 img, .item2 img, .item3 img{
+    object-fit: cover;
+}
+
+
+
+/*------------- Right----------------*/
+.round-card-section .container .col-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px 0 70px;
+}
+
+.round-card-section .container .col-right h2{
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.round-card-section .container .col-right .btn-video{
+    margin-top: 30px;
+}
+
+/* <!----------- video section --------> */
+.video-section{
+    padding: 100px 0;
+}
+.video-section .container{
+    display: flex;
+    align-items: center;
+}
+.video-section .container .col{
+    width: 50%;
+}
+.video-section .container .col-left h2{
+    max-width: 570px;
+}
+.video-section .container .col-left p{
+    max-width: 600px;
+}
+.video-section .container .col-left p:not(:first-child){
+    margin-top: 10px;
 }

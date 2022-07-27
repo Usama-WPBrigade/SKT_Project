@@ -162,7 +162,8 @@
 
 :root {
     --primary: #FEBB3A;
-    --secondary: #172933; 
+    --secondary-color: #172933; 
+    --white-color: #fff
 }
 
 *{
@@ -170,25 +171,40 @@
     padding: 0;
     margin: 0;
 }
+
 .container{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
-body h1, .h1{
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body:not([class]) h1, .h1{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 74px;
 }
+
+body.dark h1, .h1{
+    color: red;
+}
+
 body p{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 26px;
 }
+body p:not(:last-child){
+    margin-top: 10px;
+}
+
 
 body h2{
     font-family: 'Poppins';
@@ -204,4 +220,102 @@ body h3{
     font-weight: 600;
     font-size: 50px;
     line-height: 75px;
+}
+body a{
+    text-decoration: none;
+}
+.card-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+/*------------- Buttons -------------------*/
+.btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 18px 90px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+.btn:hover{
+    background-color: var(--secondary);
+    color: var(--white-color);
+}
+
+.btn-card{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #172933;
+    position: relative;
+    margin-left: 40px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.btn-card::before{
+    content: url('../images/card-btn-arrow.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+}
+.btn-card:hover{
+    color: var(--primary);
+}
+.btn-card:hover::before{
+    left: -35px;
+}
+
+/* Video btn */
+
+.btn-video{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #172933;
+    position: relative;
+    margin-left: 40px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.btn-video::before{
+    content: url('../images/btn-video-icon.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+}
+.btn-video:hover{
+    color: var(--primary);
+}
+.btn-video:hover::before{
+    left: -35px;
+}
+
+
+@media screen and (max-width:1300px){
+    body h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
