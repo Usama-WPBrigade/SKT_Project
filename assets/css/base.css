@@ -239,6 +239,32 @@ body a{
     margin: 24px 0;
 
 }
+
+/* List style */
+body ul:not([class]){
+    list-style: none;
+}
+body ul:not([class])> li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+body ul:not([class])> li >a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #05213B;
+    transition: 0.3s all;
+
+}
+body ul:not([class])> li >a:hover{
+    color: var(--primary);
+}
+
+
+
 /*------------- Buttons -------------------*/
 .btn{
     font-family: 'Poppins';
@@ -248,7 +274,7 @@ body a{
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
-    padding: 18px 90px;
+    padding: 18px;
     text-align: center;
     vertical-align: middle;
     background-color: var(--primary);
@@ -373,5 +399,12 @@ body a{
     body h2{
         font-size: 40px;
         line-height: 50px;
+    }
+}
+
+@media screen and (max-width:767px){
+    body h2{
+        font-size: 32px;
+        line-height: 48px;
     }
 }

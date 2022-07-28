@@ -1,7 +1,10 @@
 @media screen and (max-width:1200px){
     .Snippgympa-wrapper .col-right{
-        padding: 30px 50px;
+        padding: 30px 15px 30px 30px;
         
+    }
+    .round-card-section .container .col-right{
+        padding: 0 0px 0 30px;;
     }
 }
 
@@ -9,6 +12,13 @@
     .card-section .cards-wrapper .card{
         width: calc(50% - 30px);
         margin: 0 15px 30px;
+    }
+    .video-section .container .col-right .right-wrapper-video .top-img-wrapper{
+        border-radius: 50px 50px 0px 0px;
+    }
+   
+    .video-section .container .col-right .right-wrapper-video .bottom-img-wrapper{
+        border-radius: 0px 0px 50px 50px;
     }
 }
 @media screen and (max-width:767px){
@@ -33,4 +43,41 @@
     .Snippgympa-wrapper .col-right{
         padding: 50px 15px;
     }
+
+
+    .round-card-section{
+        padding: 40px 0;
+    }
+    .round-card-section .container{
+        flex-direction: column;
+    }
+    .round-card-section .container .col{
+        width: 100%;
+    }
+    .round-card-section .container .col-right{
+    margin-top: 30px;
+    padding: 0;
+    }
+
+    .video-section{
+        padding: 40px 0;
+    }
+    .video-section .container{
+        flex-direction: column-reverse;
+    }
+    .video-section .container .col{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .video-section .container .col-right .right-wrapper-video{
+        max-width: 100%;
+        grid-template-rows: 50%;
+    }
+    .video-section .container .col-right .right-wrapper-video .top-img-wrapper{
+        border-radius: 100px 100px 0px 0px;
+    }
+    .video-section .container .col-right .right-wrapper-video .bottom-img-wrapper{
+        border-radius: 0px 0px 100px 100px;
+    }
+    
 }

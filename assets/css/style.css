@@ -196,6 +196,9 @@ background-color: #F5F5F5;
 .video-section .container .col{
     width: 50%;
 }
+.video-section .container .col-left {
+    padding-right: 30px;
+}
 .video-section .container .col-left h2{
     max-width: 570px;
 }
@@ -212,14 +215,13 @@ background-color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .video-section .container .col-right .right-wrapper-video{
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 20px;
-    grid-template-columns: 500px;
     grid-template-rows: 250px 250px;
-    max-width: 500px;
     max-width: 500px;
 
 }
@@ -262,17 +264,143 @@ background-color: #F5F5F5;
     max-width: 856px;
 }
 .btns-section {
-    width: calc(100% + 360px);
-    margin: 30px -8px 8px;
+    width: calc(100% + 16px);
+    margin: 30px -8px -8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.btns-section a{
-    width: calc(345px - 8px);
+.btns-section .cta-btn{
+    max-width: calc(100% - 16px);
     margin: 8px 8px 8px;
+    display: inline-block;
 }
+.btns-section .cta-btn::after{
+    content: '';
+    width: 235px;
+    max-width: 100%;
+    display: block;
+
+}
+
 /* .btns-section a:not(:last-child){
     margin-right: 16px;
 } */
+
+
+/* <!-------- Footer -------> */
+
+.footer-wrapper{
+    padding: 70px 0;
+    background: #E1E7EB;
+}
+.footer-wrapper .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between ;
+}
+
+.footer-wrapper .container .footer-left-col .footer-logo-wrapper{
+    width: 214px;
+    height: 82px;
+}
+.footer-wrapper .container .footer-left-col .footer-logo-wrapper img{
+    object-fit: contain;
+}
+.footer-wrapper .container .footer-left-col h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: #05213B;
+    margin-top: 30px;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content{
+    margin-top: 20px;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links{
+    display: flex;
+    align-items:flex-start;
+
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links .footer-icon-wrapper{
+    width: 14px;
+    height: 18px;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links .footer-icon-wrapper img{
+    object-fit: contain;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #05213B;
+    max-width: 262px;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links{
+    transition: 0.3s all;
+}
+.footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links:hover{
+    opacity: 0.9
+    }
+    .footer-wrapper .container .footer-left-col{
+        width: 32%;
+    }
+
+/*----------------Footer Right col ----------------*/
+.footer-right-col{
+    width: calc(100% - 32%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.footer-right-col .footer-right-inner p{
+    max-width: 612px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #05213B; 
+    margin-bottom: 20px;
+}
+.footer-right-col .footer-right-inner .footer-right-img-wrapper{
+    max-width: 582px;
+    height: auto;
+}
+.footer-right-col .footer-right-inner .footer-right-img-wrapper img{
+object-fit: cover;
+}
+.footer-right-col .row2{
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    max-width: 700px;
+    width: 100%;
+}
+.footer-right-col .row2 .footer-INcol{
+    width: 33.33%;
+}
+
+/* <!-- copy right section Footer--> */
+
+footer .copyright-wrapper{
+    padding-top: 37px;
+    margin-top: 37px;
+    border-top:1px solid #9eb2bda6;
+   
+}
+
