@@ -323,12 +323,10 @@ background-color: #F5F5F5;
 .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links{
     display: flex;
     align-items:flex-start;
-
 }
 .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links:not(:last-child){
     margin-bottom: 8px;
 }
-
 .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links .footer-icon-wrapper{
     width: 14px;
     height: 18px;
