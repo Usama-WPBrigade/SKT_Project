@@ -185,9 +185,10 @@ img{
 body:not([class]) h1, .h1{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 74px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    color: #fff;
 }
 
 body.dark h1, .h1{
