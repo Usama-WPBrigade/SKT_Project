@@ -981,6 +981,7 @@ footer .copyright-wrapper{
     padding-top: 37px;
     margin-top: 37px;
     border-top:1px solid #9eb2bda6;
+    overflow: hidden;
    
 }
 .copyright-links{
@@ -1160,4 +1161,11 @@ margin-right: 43px;
   background: var(--secondary-color);
   height: 16px;
   width: 0;
+}
+.col-right .footer-icon-container:last-child .toolkit{
+    left: -70%;
+  
+}
+.col-right .footer-icon-container:last-child .toolkit::after{
+    left: 80%;
 }
