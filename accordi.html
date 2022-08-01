@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .accordions-wrapper .accordion-item .accordion-tab-title {
+	background-color:#FFFFFF;
+	padding: 12px 45px 12px 20px;
+	border: 0;
+	position: relative;
+	cursor: pointer;
+    border-radius: 5px;
+    color:#172933;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s all;
+    position: relative;
+}
+.accordions-wrapper .accordion-item .accordion-tab-title::after{
+    content: '';
+    width: 16px;
+    height: 10px;
+    background-image: url('assets/images/accordine-arrow.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordions-wrapper .accordion-item .accordion-tab-title span {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	width: 14px;
+	height: 14px;
+	display: flex;
+    
+}
+
+.accordions-wrapper .accordion-item .accordion-tab-title span img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.accordions-wrapper .accordion-item .accordion-tab-title a{
+	color: inherit;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 18px;
+	text-decoration: none;
+	display: inline-block;
+    outline: none;
+}
+
+.accordions-wrapper .accordion-item .accordion-body {
+	padding: 20px 0;
+	display: none;
+}
+
+.accordions-wrapper.accordion-icon-left .accordion-item .accordion-tab-title span {
+	left: 20px;
+}
+
+.accordions-wrapper.accordion-icon-left .accordion-item .accordion-tab-title {
+	padding: 12px 20px 12px 45px; 
+}
+
+/* Is active */
+.accordions-wrapper .accordion-item.is-active .accordion-tab-title{
+	background-color:#172933;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+.accordions-wrapper .accordion-item.is-active .accordion-tab-title::after{
+    background-image: url('assets/images/accordine-white-arrow.svg');
+}
+
+.accordions-wrapper .accordion-item.is-active .accordion-icon img {
+	transform: rotate(-180deg);
+}
+
+/* Generic */
+.accordions-wrapper .accordion-item:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.accordions-wrapper.compact .accordion-item {
+	margin-bottom: 0;
+}
+
+
+    </style>
+</head>
+<body>
+             
+    <section class="accordin-section-wrapper">
+        <div class="container">
+           <div class="accordin-cols-wrapper">
+            <div class="col-left col">
+                <div class="accordions-wrapper first-open">
+                    <div class="accordion-item ">
+                      <div class="accordion-tab-title">
+                          <!-- <span class="accordion-icon">
+                            <img src="assets/images/accordine-arrow.svg" alt="Arrow Drop">
+                          </span> -->
+                          <a href="#" class="accordion-title">Accordion Title</a>
+                      </div>
+                      <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur odit at ducimus veniam tempore nostrum voluptates aut dignissimos, ea perspiciatis vero voluptatibus aperiam voluptas fuga quia accusamus iste! Magni!</p>
+                      </div>
+                    </div>
+      
+                    <div class="accordion-item ">
+                      <div class="accordion-tab-title ">
+                          <span class="accordion-icon">
+                            <img src="assets/images/accordine-arrow.svg" alt="Arrow Drop">
+                          </span>
+                          <a href="#" class="accordion-title">Accordion Title</a>
+                      </div>
+                      <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur odit at ducimus veniam tempore nostrum voluptates aut dignissimos, ea perspiciatis vero voluptatibus aperiam voluptas fuga quia accusamus iste! Magni!</p>
+                      </div>
+                    </div>
+      
+                  </div>
+               </div>
+               <div class="col-right col">
+                   <div class="accordions-wrapper first-open">
+                       <div class="accordion-item">
+                         <div class="accordion-tab-title ">
+                             <span class="accordion-icon">
+                               <img src="assets/images/accordine-arrow.svg" alt="Arrow Drop">
+                             </span>
+                             <a href="#" class="accordion-title">Accordion Title</a>
+                         </div>
+                         <div class="accordion-body">
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur odit at ducimus veniam tempore nostrum voluptates aut dignissimos, ea perspiciatis vero voluptatibus aperiam voluptas fuga quia accusamus iste! Magni!</p>
+                         </div>
+                       </div>
+         
+                       <div class="accordion-item ">
+                         <div class="accordion-tab-title ">
+                             <span class="accordion-icon">
+                               <img src="assets/images/accordine-arrow.svg" alt="Arrow Drop">
+                             </span>
+                             <a href="#" class="accordion-title">Accordion Title</a>
+                         </div>
+                         <div class="accordion-body">
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur odit at ducimus veniam tempore nostrum voluptates aut dignissimos, ea perspiciatis vero voluptatibus aperiam voluptas fuga quia accusamus iste! Magni!</p>
+                         </div>
+                       </div>
+         
+                     </div>
+               </div>
+           </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.js"> </script>
+    <script>
+        $(document).ready(function () {
+        (function($){
+        $('.accordion-tab-title').on('click' ,function() {
+        $(this).siblings(".accordion-body").slideToggle().closest('.accordion-item').toggleClass('is-active').siblings().removeClass("is-active").find(".accordion-body").slideUp()
+        });
+        $(".accordions-wrapper.first-open").find(".accordion-item").first().addClass("is-active").find(".accordion-body").slideDown();
+        }(jQuery));
+        })
+         
+    </script>
+
+</body>
+</html>
