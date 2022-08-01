@@ -47,7 +47,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: none;
-
+    z-index: 1;
 }
 
 .topbar-wrapper .form-wrapper .form-heading{
@@ -66,6 +66,111 @@
     line-height: 24px;
     color: #000000;
 
+}
+/* <!--------------- Header manu --------------------> */
+.mobile-menu{
+    display: none;
+}
+.menu-section-wrapper{
+    background: #FFFFFF;
+    padding: 20px 0;
+}
+.menu-section-wrapper .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-section-wrapper .container .menu-left-col .site-logo{
+    max-width: 192px;
+}
+
+/* Menu Nav*/
+nav{
+    display: flex;
+    align-items: center;
+}
+.main-menu-list {
+    list-style: none;
+    position: relative;
+}
+.main-menu-list > li{
+    display: inline-block;
+}
+.main-menu-list >li > a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #172933;
+    text-transform: capitalize;
+    margin-right: 56px;
+    transition: 0.3s all;
+    position: relative;
+}
+.main-menu-list >li > a:hover{
+    color: var(--primary);
+}
+.desktop-menu{
+    width: calc(100% - 200px);
+}
+.desktop-menu .main-menu-list > li > a > span{
+    color: var(--primary);
+}
+
+.menu-btn{
+    width: 200px;
+    cursor: pointer;
+}
+/* menu list hover*/
+
+.desktop-menu .main-menu-list >li >a:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color:var(--secondary-color);
+    position: absolute;
+    bottom:-8px;
+    left: 0;
+    transition: 0.3s all;
+}
+.desktop-menu .main-menu-list >li >a:hover:after{
+   width:100%;
+}
+
+/* Menu Dropdown*/
+.drop-down{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: #E4F5FF;
+    max-width: 373px;
+    width: 100%;
+    top: 69px;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+.dropdown-content .dropdown-list{
+    list-style: none;
+}
+
+.dropdown-content .dropdown-list li a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #172933;
+    text-decoration: none;
+    padding: 14px 45px;
+    width: 100%;
+    display: block;
+}
+
+.dropdown-content .dropdown-list li a:hover{
+    background: #FFFFFF;
 }
 
 
@@ -449,9 +554,10 @@ background-color: #F5F5F5;
 /* <!------------ Accordines -----------> */
 .accordin-section-wrapper{
     padding: 100px 0 100px 0;
-    border: 1px solid red;
     box-sizing: border-box;
+    background-color: #8080800f;
 }
+
 .accordin-section-wrapper .container{
     display: flex;
     align-items: center;

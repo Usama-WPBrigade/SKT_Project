@@ -262,7 +262,7 @@ body ul:not([class])> li >a{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     color: #05213B;
     transition: 0.3s all;
