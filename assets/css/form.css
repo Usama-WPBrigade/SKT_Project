@@ -2,7 +2,8 @@
 
 .contact-form-wrapper{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     padding: 50px;
     background-color: #fff;
     position: absolute;
@@ -10,6 +11,38 @@
     flex-direction: column;
     width: 50%;
     height: 100vh;
-    height: 100%;
     right: 0;
 }
+.contact-form-wrapper .card-heading{
+    margin-bottom: 24px;
+}
+.contact-form-wrapper .contact-form-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #231F20;
+    max-width: 300px;
+    margin-bottom: 6px;
+}
+.paragraph{
+    max-width: 410px;
+}
+.form-container{
+    margin-top: 80px;
+    max-width: 578px;
+    width: 100%;
+}
+.form-container .form{
+    width: calc(100% + 18px);
+    margin: 0 -9px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-container .form .group-field{
+    width: calc(50% - 18px);
+    margin: 0 9px;
+    border: 1px solid red;
+}
+
