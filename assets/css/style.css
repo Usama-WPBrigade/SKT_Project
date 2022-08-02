@@ -422,6 +422,10 @@ nav{
         right: 0;
         left: 0;
     }
+
+    .tab-slider-wrapper .mySwiper2 .swiper-button-disabled{
+        opacity: 0
+    }
     /* .tab-slider-wrapper .mySwiper2  .swiper-button-next{
         position: absolute;
         top: 42%;
