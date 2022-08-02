@@ -1,0 +1,15 @@
+
+
+.contact-form-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    height: 100%;
+    right: 0;
+}

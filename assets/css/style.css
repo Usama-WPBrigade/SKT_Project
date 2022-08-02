@@ -2,6 +2,7 @@
 
 /* <!--------------- Hero section --------------------> */
 @import url('../css/base.css');
+@import url('../css/form.css');
 
 
 /* <!--------------- header --------------------> */
@@ -311,7 +312,10 @@ nav{
 }
 
 /* <!---------------- Tab Slider container ------------------> */
-
+.tab-slider-wrapper{
+    min-height: 400px;
+    position: relative;
+}
 .tab-slider-wrapper .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -367,6 +371,48 @@ nav{
     object-fit: cover;
   }
 
+   /* Tabs Next Prev Arrow */
+   .tab-slider-wrapper .mySwiper .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled,     .tab-slider-wrapper  .swiper-button-prev.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-prev.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0
+    }   
+    .tab-slider-wrapper .mySwiper .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: 0;
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: 0;
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-prev, .tab-slider-wrapper .mySwiper .swiper-button-next{
+        background: linear-gradient(90deg,#fff 55%,rgba(30,30,47,0));
+        height: 100%;
+        margin-top: 0;
+        top: 0;
+        transition: all .3s;
+        width: 80px;
+    
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-prev{
+        left: 0;
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-next{
+        right:0;
+    }
+    
+    .tab-slider-wrapper .mySwiper .swiper-button-prev::after, .tab-slider-wrapper .mySwiper .swiper-button-next::after{
+        font-size: 30px;
+        color: var(--primary);
+        position: relative;
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-prev::after{
+        left: -29px;
+    }
+    .tab-slider-wrapper .mySwiper .swiper-button-next::after{
+        right: -30px;
+    }
+
+
   /*Tab slider 2 or images Slider*/
   .tab-slider-wrapper .mySwiper2 {
     width: 100%;
@@ -408,7 +454,7 @@ nav{
         transform: translateY(-50%);
         background:linear-gradient(90deg,rgba(30,30,47,0),#fff)!important;
         height: 76%;
-        width: 80px;
+        width: 120px;
         right: 0;
     }
 
@@ -418,7 +464,7 @@ nav{
         transform: translateY(-50%);
         background:linear-gradient(90deg,#fff, rgba(30,30,47,0))!important;
         height: 76%;
-        width: 80px;
+        width: 100px;
         right: 0;
         left: 0;
     }
@@ -426,15 +472,10 @@ nav{
     .tab-slider-wrapper .mySwiper2 .swiper-button-disabled{
         opacity: 0
     }
-    /* .tab-slider-wrapper .mySwiper2  .swiper-button-next{
-        position: absolute;
-        top: 42%;
-        transform: translateY(-50%);
-    } */
     .tab-slider-wrapper .mySwiper2 .swiper-button-next::after,  .tab-slider-wrapper .mySwiper2 .swiper-button-prev::after{
         position: absolute;
         font-size: 26px;
-        border: 1px solid var(--primary);
+        border: 2px solid var(--primary);
         padding: 12px;
         border-radius: 50%;
         width: 30px;
@@ -455,46 +496,32 @@ nav{
     left: 5px;
    }
 
-  /* Tabs Next Prev Arrow */
-  .tab-slider-wrapper .mySwiper .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled,     .tab-slider-wrapper  .swiper-button-prev.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 0
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-prev.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 0
-    }   
-    .tab-slider-wrapper .mySwiper .swiper-button-next, .swiper-rtl .swiper-button-prev{
-        right: 0;
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-prev, .swiper-rtl .swiper-button-next{
-        left: 0;
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-prev, .tab-slider-wrapper .mySwiper .swiper-button-next{
-        background: linear-gradient(90deg,#fff 55%,rgba(30,30,47,0));
-        height: 100%;
-        margin-top: 0;
-        top: 0;
-        transition: all .3s;
-        width: 80px;
-    
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-prev{
-        left: 0;
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-next{
-        right:0;
-    }
-    
-    .tab-slider-wrapper .mySwiper .swiper-button-prev::after, .tab-slider-wrapper .mySwiper .swiper-button-next::after{
-        font-size: 30px;
-        color: var(--primary);
-        position: relative;
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-prev::after{
-        left: -29px;
-    }
-    .tab-slider-wrapper .mySwiper .swiper-button-next::after{
-        right: -30px;
-    }
+   /* pagination of tab slider */
+
+.tab-slider-wrapper{
+    position: relative;
+}
+.tab-slider-wrapper .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
+.tab-slider-wrapper .swiper-pagination .swiper-pagination-bullet{
+    width: 24px;
+    height: 6px;
+    border-radius: 0;
+    background: #39181C;
+    opacity: 0.3;
+    transition: 0.3s all;
+}
+.tab-slider-wrapper .swiper-pagination .swiper-pagination-bullet:not(:last-child){
+    margin-right: 10px;
+}
+
+.tab-slider-wrapper .swiper-pagination  .swiper-pagination-bullet-active{
+    width: 140px;
+    opacity: 1;
+    background-color: var(--primary);
+} 
 
 /* <!---------------- Snippgympa Section ------------------> */
 
