@@ -25,6 +25,8 @@
 }
 
 @media screen and (max-width:1024px){
+    /**/
+
     .card-section .cards-wrapper .card{
         width: calc(50% - 30px);
         margin: 0 15px 30px;
@@ -41,6 +43,7 @@
     .topbar-wrapper .top-nav ul li{
         margin-right: 35px;
     }
+
 }
 @media screen and (max-width:920px){
     /* header */
@@ -61,5 +64,20 @@
     .topbar-wrapper .container{
         justify-content: space-between;
     }
-    
+
+    /*Hero section*/
+    .hero-wrapper{
+        background-color: #172933c2;
+    }
+    .hero-bg-wrapper{
+        width: 100%;
+        z-index: -1;
+    }
+    .hero-wrapper .container .hero-inner-wrapper::after{
+        display: none;
+    }
+    .hero-wrapper .container .hero-inner-wrapper{
+        width: 100%;
+        z-index: 1;
+    }
 }

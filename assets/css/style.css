@@ -223,11 +223,7 @@ nav{
 /* <!--------------- Hero section --------------------> */
 
 .hero-wrapper{
-    /* min-height: 560px;
-    background-image: url('../images/hero-img.jpg');
-    background-position:150px 0px;
-    background-size: cover;
-    background-repeat: no-repeat; */
+
     background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
@@ -245,7 +241,8 @@ nav{
 
 .hero-wrapper .container .hero-inner-wrapper{
     height: 100%;
-    min-height: 560px;
+    /* min-height: 560px; */
+    height: 40vw;
     width: 50%;
     display: flex;
     position: relative;
@@ -293,8 +290,12 @@ nav{
 .top-table-wrapper{
     padding: 100px 0;
 }
-
-
+.top-table-wrapper .container .table-container{
+    border: 1px solid #E1E7EB;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
+}
+/* #E1E7EB */
 .contact-enroll-wrapper{
     background-color: var(--secondary-color);
     padding: 20px 36px;

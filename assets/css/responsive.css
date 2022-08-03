@@ -6,7 +6,10 @@
     }
 
 
-
+    /* Hero Section*/
+    .hero-wrapper .container .hero-inner-wrapper{
+        min-height: 450px;
+    }   
 
     .Snippgympa-wrapper{
         flex-direction: column;
