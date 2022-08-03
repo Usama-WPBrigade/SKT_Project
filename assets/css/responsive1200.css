@@ -22,6 +22,12 @@
     .round-card-section .container .col-right{
         padding: 0 0px 0 30px;;
     }
+
+    /*tab slider overlay*/
+    .bottom-slider .bottomSwiper .swiper-wrapper .swiper-slide .inner-slider .slider-overlay .slider-heading{
+        font-weight: 600;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1024px){
@@ -43,7 +49,17 @@
     .topbar-wrapper .top-nav ul li{
         margin-right: 35px;
     }
+    
+    /* tabSlider */
+    .tab-slider-wrapper{
+        padding-bottom: 50px;
+    }
 
+    .bottom-slider .bottomSwiper .swiper-wrapper .swiper-slide .inner-slider .slider-overlay{
+        padding: 20px;
+    }
+  
+  
 }
 @media screen and (max-width:920px){
     /* header */

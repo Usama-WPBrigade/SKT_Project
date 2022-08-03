@@ -42,8 +42,8 @@ $(document).ready(function () {
 
       /*Bottom slider*/
       var swiper = new Swiper(".bottomSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
         grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
@@ -57,24 +57,57 @@ $(document).ready(function () {
         autoplay: {
           delay: 5000,
         },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          820: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1124: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          }
+        }
       });
 
 
       /**Tab Slider */
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
-        slidesPerView: 6,
+        slidesPerView: 2,
         freeMode: true,
         watchSlidesProgress: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
         }
+        
       });
 
       var swiper2 = new Swiper(".mySwiper2", {
-        spaceBetween: 10,
-        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerView: 1,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
@@ -85,7 +118,22 @@ $(document).ready(function () {
         },
         thumbs: {
           swiper: swiper
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }
         }
+
       });
 
       /* Form Open*/

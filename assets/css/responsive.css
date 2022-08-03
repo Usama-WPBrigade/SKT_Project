@@ -11,6 +11,64 @@
         min-height: 450px;
     }   
 
+
+    /*table section*/
+    .top-table-wrapper{
+        padding: 50px 0;
+    }
+    .contact-enroll-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 15px;
+    }
+    .contact-enroll-wrapper .contact-enroll-btn{
+        margin-top: 20px;
+        /* max-width: 239px;
+        width: 100%; */
+    }
+    .contact-enroll-wrapper .content{
+        width: 100%;
+    }
+
+
+    /*tab Slider*/
+    .tabsldier-section-wrapper{
+        padding: 50px 0;
+    }
+    .tabsldier-section-wrapper .container .tab-slider-heading{
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 24px;
+    }
+    .tab-slider-wrapper .mySwiper2 .swiper-button-next, .tab-slider-wrapper .mySwiper2 .swiper-button-prev{
+        background: linear-gradient(90deg,rgba(30,30,47,0),#fff0)!important;
+    }
+
+    .tab-slider-wrapper .mySwiper2 .swiper-button-next::after, .tab-slider-wrapper .mySwiper2 .swiper-button-prev::after{
+        font-size: 20px;
+    }
+    .tab-slider-wrapper .mySwiper2 .swiper-button-next::after, .tab-slider-wrapper .mySwiper2 .swiper-button-prev::after{
+        width: 15px;
+        height: 15px;
+    }
+
+    .tab-slider-wrapper .mySwiper .swiper-button-prev, .tab-slider-wrapper .mySwiper .swiper-button-next{
+        display: none;
+    }
+    .tab-slider-wrapper .swiper-pagination .swiper-pagination-bullet{
+        width: 24px;
+    }
+
+    .tab-slider-wrapper .swiper-pagination .swiper-pagination-bullet-active{
+        width: 98px;
+    }
+
+    .tab-slider-wrapper .swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+        margin-right: 5px;
+    }
+
+
+
     .Snippgympa-wrapper{
         flex-direction: column;
     }
@@ -68,5 +126,41 @@
     .video-section .container .col-right .right-wrapper-video .bottom-img-wrapper{
         border-radius: 0px 0px 100px 100px;
     }
-    
+
+
+    /* According section*/
+
+    .accordin-section-wrapper{
+        padding: 50px 0;}
+    .faq-heading{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .accordin-section-wrapper .container .accordin-cols-wrapper{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+
+    }
+    .accordin-section-wrapper .container .col{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Progress bar section*/
+    .progress-section-wrapper{
+        padding: 50px 0;
+    }
+    .progress-bar{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .progress-bar .pg-bar{
+        width: 100%;
+    }
+    .progress-bar:not(:first-child) .pg-title{
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+    }
 }

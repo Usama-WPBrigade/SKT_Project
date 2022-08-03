@@ -302,6 +302,11 @@ nav{
     display: flex;
     align-items: center;
 }
+.contact-enroll-wrapper .content {
+    width: calc(100% - 288px);
+
+}
+
 .contact-enroll-wrapper .content p{
     font-family: 'Poppins';
     font-style: normal;
@@ -310,10 +315,10 @@ nav{
     line-height: 30px;
     color: #FFFFFF;
     margin-right: 30px;
-    max-width: 770px;
 }
 .contact-enroll-wrapper  .contact-enroll-btn{
-    width: 288px;
+    max-width: 288px;
+    width: 100%;
 }
 .contact-enroll-wrapper  .contact-enroll-btn:hover{
     background-color: #E1E7EB;
@@ -375,7 +380,8 @@ nav{
     text-transform: uppercase;
     color:#172933;
     text-align: left;
-  }.tab-slider-wrapper .mySwiper {
+  }
+  .tab-slider-wrapper .mySwiper {
     height: 100px;
     box-sizing: border-box;
     padding: 10px 0;
@@ -445,13 +451,17 @@ nav{
     width: 100%;
     height: auto;
     padding: 0;
+    position: relative;
   }
   .tab-slider-wrapper .mySwiper2 .swiper-slide .TS-imgage-wrapper{
-        max-width:270px;
-        /* width: 100%; */
-        max-height:160px;
+        /* max-width:270px; */
+        width: 100%;
+        /* max-height:160px; */
+        height: 100%;
     }
-  .tab-slider-wrapper .mySwiper2 .swiper-slide .TS-imgage-wrapper{
+
+    
+  .tab-slider-wrapper .mySwiper2 .swiper-slide .TS-imgage-wrapper img{
     display: block;
     object-fit: cover;
   }
@@ -475,22 +485,22 @@ nav{
         text-transform: capitalize;
 
     }
-     .tab-slider-wrapper .mySwiper2  .swiper-button-next {
+     .tab-slider-wrapper .mySwiper2 .swiper-button-next {
         position: absolute;
-        top: 42%;
+        top: 50%;
         transform: translateY(-50%);
         background:linear-gradient(90deg,rgba(30,30,47,0),#fff)!important;
-        height: 76%;
+        height: 100%;
         width: 120px;
         right: 0;
     }
 
     .tab-slider-wrapper .mySwiper2  .swiper-button-prev{
         position: absolute;
-        top: 42%;
+        top: 50%;
         transform: translateY(-50%);
         background:linear-gradient(90deg,#fff, rgba(30,30,47,0))!important;
-        height: 76%;
+        height: 100%;
         width: 100px;
         right: 0;
         left: 0;
@@ -842,7 +852,7 @@ background-color: #F5F5F5;
 
 /* <!------------ Accordines -----------> */
 .accordin-section-wrapper{
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
     box-sizing: border-box;
     background-color: #8080800f;
 }
