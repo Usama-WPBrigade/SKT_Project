@@ -1,8 +1,23 @@
 $(document).ready(function () {
+
+  $(".menu-btn").on('click', function (e) {
+    e.preventDefault();
+    $("body").toggleClass("overflow")
+    $("body").toggleClass("body-overlay-class")
+    $(".headerFormPopup").toggleClass("headerFormPopup-open")
+  });
+
+  $(".form-close-btn").on('click', function (e) {
+    e.preventDefault();
+    $("body").removeClass()
+    $(".headerFormPopup").toggleClass("headerFormPopup-open")
+  });
+ 
+
+
   $(".btn-search-icon").on('click', function () {
     $(".form-wrapper").slideToggle();
-    // $("body").toggleClass("overflow")
-    // $(".menu_icon").toggleClass("openmenu")
+   
   });
 
 
@@ -73,6 +88,9 @@ $(document).ready(function () {
         }
       });
 
+      /* Form Open*/
+
+ 
 });
 
 
@@ -90,6 +108,7 @@ $(document).ready(function () {
 //   percentageEl.innerText = percvalue;
 //   percentageEl.style.left = percentage;
 // }
+
 
 
 

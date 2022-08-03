@@ -7,40 +7,11 @@
     <title>SKT Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive1200.css"/>
     <link rel="stylesheet" href="assets/css/responsive.css"/>
 </head>
 <body>
 
-    <!--------------- Contact Form -------------------->
-    <div class="contact-form-wrapper">
-        <h3 class="card-heading">Request Information Form</h3>
-        <h2 class="contact-form-heading">Lörem ipsum folig innan</h2>
-        <div class="paragraph">
-            <p> Vaktig treskade rer till e-demokrati euroganar i böbel år. Faktig denera inte revis</p>
-        </div>
-
-        <div class="form-container">
-            <form class="form">
-                <div class="group-field">
-                    <select name="" id="">
-                        <option value="Select Campus">Select Campus</option>
-                        <option value="Select Campus">Select Campus</option>
-                        <option value="Select Campus">Select Campus</option>
-                        <option value="Select Campus">Select Campus</option>
-                    </select>
-                </div>
-                <div class="group-field">
-                    <input type="date" name="" id="">
-                </div>
-                <div class="group-field">
-                    <input type="text" name="" id="">
-                </div>
-                <div class="group-field">
-                    <input type="email" name="" id="">
-                </div>
-            </form>
-        </div>
-    </div>
     
     
     
@@ -108,15 +79,74 @@
                         </ul>
                         <div class="mobile-menu"></div>
                     </div>
-                    <a href="" class="menu-btn btn">Kagt maska</a>
+                    <a href="#" class="menu-btn btn">Kagt maska</a>
                 </nav>
             </div>
            </div>
         </section>
     </header>
 
+    <!--------------- Contact Form -------------------->
+    <div class="headerFormPopup">
+        <div class="form-main-wrapper">
+            <button class="form-close-btn" >Close</button>
+            <div class="form-container">
+                <div class="form-content">
+                    <h3>Request Information Form</h3>
+                    <h2>Lörem ipsum folig innan</h2>
+                    <div class="form-para">
+                        <p> Vaktig treskade rer till e-demokrati euroganar i böbel år. Faktig denera inte revis</p>
+                    </div>
+                </div>
+
+                <form class="form-field">
+                    <div class="inner-form-wrapper">
+                        <div class="field-group-row">
+                            <label for="campus" >Campus</label>
+                            <select name="campus" id="campus">
+                                <option value="Select Campus">Select Campus</option>
+                                <option value="Select Campus">Select Campus</option>
+                                <option value="Select Campus">Select Campus</option>
+                            </select>
+                        </div>
+                        <div class="field-group-row">
+                            <label for="Date">Campus</label>
+                            <input type="date" required id="Date">
+                        </div>
+                    
+                        <div class="field-group-row">
+                            <label for="firstname">First Name</label>
+                            <input type="text" required id="firstname" placeholder="John">
+                        </div>
+    
+                        <div class="field-group-row">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" required id="lastname" placeholder="John">
+                        </div>
+                      
+                        <div class="field-group-row">
+                            <label for="email">Last Name</label>
+                            <input type="email" required id="email" placeholder="email@example.com">
+                        </div>
+                    </div>
+                   
+                    <div class="form-submit-wrapper">
+                    <input type="submit" value="Kagt maska" name="" id="" class="btn">
+                    </div>
+                   
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+
     <!--------------- Hero section -------------------->
     <section class="hero-wrapper">
+        <div class="hero-bg-wrapper">
+            <img src="assets/images/hero-img.jpg" alt="">
+        </div>
         <div class="container">
                 <div class="hero-inner-wrapper">
                     <div class="content">

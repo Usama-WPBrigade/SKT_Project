@@ -1,0 +1,65 @@
+@media screen and (max-width:1200px){
+    /*Header*/
+    .menu-section-wrapper .container .menu-left-col .site-logo{
+        max-width: 145px;
+    }
+
+    .main-menu-list >li > a{
+        margin-right: 35px;    
+        font-size: 16px;
+    }
+    .desktop-menu{
+        width: calc(100% - 150px);
+    }
+    .menu-btn{
+        width: 150px;
+    }
+
+    .Snippgympa-wrapper .col-right{
+        padding: 30px 15px 30px 30px;
+        
+    }
+    .round-card-section .container .col-right{
+        padding: 0 0px 0 30px;;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .card-section .cards-wrapper .card{
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+    .video-section .container .col-right .right-wrapper-video .top-img-wrapper{
+        border-radius: 50px 50px 0px 0px;
+    }
+   
+    .video-section .container .col-right .right-wrapper-video .bottom-img-wrapper{
+        border-radius: 0px 0px 50px 50px;
+    }
+
+    
+    .topbar-wrapper .top-nav ul li{
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width:920px){
+    /* header */
+    .menu-section-wrapper .container .menu-left-col .site-logo {
+        max-width: 120px;
+    }
+    .main-menu-list >li > a{
+        margin-right: 25px;
+    }
+    .desktop-menu{
+        width: calc(100% - 120px);
+    }
+    .menu-btn{
+        width: 120px;
+        font-size: 12px;
+    }
+    /*Topbar*/
+    .topbar-wrapper .container{
+        justify-content: space-between;
+    }
+    
+}

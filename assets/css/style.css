@@ -5,6 +5,20 @@
 @import url('../css/form.css');
 
 
+body{
+    position: static;
+    overflow-x: hidden;
+}
+.overflow{
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.overflow-auto{
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
 /* <!--------------- header --------------------> */
 .topbar-wrapper {
     background-color: var(--secondary-color);
@@ -209,15 +223,27 @@ nav{
 /* <!--------------- Hero section --------------------> */
 
 .hero-wrapper{
-    min-height: 560px;
+    /* min-height: 560px;
     background-image: url('../images/hero-img.jpg');
-    background-position:150px -36px;
+    background-position:150px 0px;
     background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: var(--secondary-color);
+    position: relative;
     overflow: hidden;
 }
-.hero-wrapper .container .hero-inner-wrapper{
+.hero-bg-wrapper{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+.hero-bg-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
 
-    background-color: var(--secondary-color);
+.hero-wrapper .container .hero-inner-wrapper{
     height: 100%;
     min-height: 560px;
     width: 50%;
@@ -234,7 +260,7 @@ nav{
     color: #ffffff;
     
 }
-
+/* 
 .hero-wrapper .container .hero-inner-wrapper::before{
     content: '';
     width: 100vw;
@@ -244,7 +270,7 @@ nav{
     position: absolute;
     right: 0;
     z-index: -1;
-}
+} */
 .hero-wrapper .container .hero-inner-wrapper::after{
     content: '';
     width:130px;

@@ -184,7 +184,7 @@ img{
     height: 100%;
 }
 
-body:not([class]) h1, .h1{
+body h1, .h1{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
