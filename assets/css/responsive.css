@@ -1,4 +1,9 @@
 
+@media screen and (max-width:640px){
+    .bottom-slider .bottomSwiper .swiper-wrapper .swiper-slide{
+        max-height: 245px;
+    }
+}
 @media screen and (max-width:767px){
     /* Top bar*/
     .topbar-wrapper {
@@ -162,5 +167,22 @@
         width: 100%;
         display: flex;
         margin-bottom: 10px;
+    }
+
+    /* Bottom slider*/
+    .bottom-slider .bottomSwiper::after, .bottom-slider .bottomSwiper::before{
+        display: none;
+    }
+    .bottom-slider .bottomSwiper{
+        padding: 0;
+    }
+    .bottom-slider{
+        padding: 0 15px;
+    }
+
+
+    /* Footer*/
+    .footer-wrapper{
+        margin-top: 80px;
     }
 }
