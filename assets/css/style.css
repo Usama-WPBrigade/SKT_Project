@@ -18,7 +18,9 @@ body{
     overflow-x: hidden;
 
 }
-
+.overflowformenu{
+    overflow: hidden;
+}
 /* <!--------------- header --------------------> */
 .topbar-wrapper {
     background-color: var(--secondary-color);
@@ -83,9 +85,14 @@ body{
 
 }
 /* <!--------------- Header manu --------------------> */
-.mobile-menu{
+.burger_icon{
     display: none;
 }
+
+.mobile-menu, .mobile-search-btn{
+    display: none;
+}
+
 .menu-section-wrapper{
     background: #FFFFFF;
     padding: 20px 0;

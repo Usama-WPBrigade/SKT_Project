@@ -96,4 +96,9 @@
         width: 100%;
         z-index: 1;
     }
+    
+    /*Footer*/
+    .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links p{
+        max-width: 215px;
+    }
 }
