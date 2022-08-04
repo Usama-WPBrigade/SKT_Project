@@ -432,6 +432,10 @@
 .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links:not(:last-child){
     margin-bottom: 15px;
 }
+.video-play-icon img{
+    width: 50px;
+    height: 50px;
+}
 
 
 }

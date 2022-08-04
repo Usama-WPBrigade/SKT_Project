@@ -101,4 +101,9 @@
     .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links p{
         max-width: 215px;
     }
+
+    .video-play-icon img{
+        width: 80px;
+        height: 80px;
+    }
 }

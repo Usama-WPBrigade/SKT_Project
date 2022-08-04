@@ -22,6 +22,11 @@ body{
     overflow: hidden;
 }
 /* <!--------------- header --------------------> */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
 .topbar-wrapper {
     background-color: var(--secondary-color);
     padding: 2px 0;
@@ -522,8 +527,8 @@ nav{
         border: 2px solid var(--primary);
         padding: 12px;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1309,7 +1314,9 @@ footer .copyright-wrapper{
     right: -30px;
     top: 0;
 }
-
+.footer-INcol ul li{
+    display: block !important;
+}
 /*-------------- Footer Icon Column ---------------*/
 .copyright-wrapper .col-right{
     display: flex;
@@ -1475,3 +1482,93 @@ margin-right: 43px;
 .col-right .footer-icon-container:last-child .toolkit::after{
     left: 80%;
 }
+
+
+/*POP Up video Section*/
+
+.videoPOP-wreapper{
+    position: fixed;
+    background: rgba(0,0,0,0.62);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    width:100%;
+    z-index: 100;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+    visibility: hidden;
+
+    
+}
+.videoPOP-wreapper.openvideo{
+    visibility: visible;
+}
+
+.videoPOP-wreapper .videoPOP-container{
+    width: 90vw;
+    min-height: 200px;
+    height: 51vw;
+    position: relative;
+    border: 10px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.videoPOP-wreapper .videoPOP-container .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.videoPOP-wreapper .videoPOP-container .overlay .video-overlayIMG-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.video-play-icon{
+    width: 100%;
+    height: 100%;
+    background: rgba(24,24,24,0.65);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.video-play-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 123px;
+    height: 1230px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.video-play-icon img:hover{
+    opacity: 0.7
+
+}
+.videoPOP-wreapper .videoPOP-container .iframe-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    
+}
+
+.videoPOP-wreapper .videoPOP-container .iframe-wrapper iframe{
+        width: 100%;
+    height: 100%;
+}
+
+.videoPOP-wreapper .videoPOP-container .overlay.overlayhidden{
+    visibility: hidden;
+}
+
+

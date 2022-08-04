@@ -52,17 +52,10 @@ $(".mobile-memu-down").on('click', function (e) {
 
 /* On mobile menu slide down code block End*/
 
-
-
-
-
   $(".btn-search-icon").on('click', function () {
     $(".form-wrapper").slideToggle();
    
   });
-
-
-  
 
   /*On Mobile Search form open close code block*/
   $(".mobile-search-btn").on('click', function (event) {
@@ -70,12 +63,6 @@ $(".mobile-memu-down").on('click', function (e) {
     $(".desktop-menu").hide();
    
   });
-  
-  // $(".close-mobile-search").on('click', function (event) {
-  //   $(".mobile-search-field").hide();
-  //   $(".desktop-menu").show();
-   
-  // });
 
 
   $(".mobile-search-field").on("click", function (e) {
@@ -116,8 +103,39 @@ $(".mobile-memu-down").on('click', function (e) {
       $(".accordions-wrapper.first-open").find(".accordion-item").first().addClass("is-active").find(".accordion-body").slideDown();
       }(jQuery));
     
-  /* accordine code block end */
       
+  /* accordine code block end */
+  
+  /*Popup video section code block start*/
+  $(".btn-black-video").on('click', function (e) {
+    e.preventDefault();
+    $("body").toggleClass("overflowformenu")
+    $(".videoPOP-wreapper").toggleClass("openvideo")
+  });
+
+  $(".video-play-icon").on('click', function (e) {
+    e.preventDefault();
+    $(".overlay").toggleClass("overlayhidden")
+    // $(".videoPOP-wreapper").toggleClass("openvideo")
+    $("#video1")[0].src += "?autoplay=1";
+  });
+
+  $(".videoPOP-wreapper").on("click", function (e) {
+    if (e.target.className !== ".videoPOP-container"  &&
+  !$(e.target).parents(".videoPOP-wreapper").length
+      ) {
+      $("body").removeClass("overflowformenu")
+    $(".videoPOP-wreapper").removeClass("openvideo")
+    }
+  // alert("hello")
+  });
+
+
+  /*Popup video section code block end*/
+
+
+
+
   
   /*Bottom slider*/
       var swiper = new Swiper(".bottomSwiper", {
