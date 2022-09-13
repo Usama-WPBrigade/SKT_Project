@@ -67,7 +67,7 @@
         max-width: 120px;
     }
     .main-menu-list >li > a{
-        margin-right: 25px;
+        margin-right: 16px;
     }
     .desktop-menu{
         width: calc(100% - 120px);

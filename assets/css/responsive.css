@@ -465,6 +465,11 @@
 }
 
 
+.menu-section-wrapper{
+    background-color: #E6F2F5;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.333);
+}
+
 
 
 }
