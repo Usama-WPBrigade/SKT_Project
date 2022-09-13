@@ -73,7 +73,7 @@ header{
 }
 
 .topbar-wrapper .form-wrapper .form-heading{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -81,7 +81,7 @@ header{
     color: #000000;
 }
 .topbar-wrapper .form-wrapper p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -124,7 +124,7 @@ nav{
     display: inline-block;
 }
 .main-menu-list >li > a{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -201,7 +201,7 @@ nav{
 }
 
 .dropdown-content .dropdown-list li a{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -253,7 +253,6 @@ nav{
 
 .hero-wrapper .container .hero-inner-wrapper{
     height: 100%;
-    /* min-height: 560px; */
     height: 40vw;
     width: 50%;
     display: flex;
@@ -320,7 +319,7 @@ nav{
 }
 
 .contact-enroll-wrapper .content p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -343,7 +342,7 @@ nav{
     padding: 100px 0;
 }
 .tabsldier-section-wrapper .container .tab-slider-heading{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -383,7 +382,7 @@ nav{
   }
 
   .tab-slider-wrapper .swiper-slide {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -488,7 +487,7 @@ nav{
         margin-top: 15px;
     }
     .tab-slider-wrapper .mySwiper2 .swiper-slide .content h3{
-        font-family: 'Poppins';
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -673,7 +672,7 @@ background-color: #F5F5F5;
     align-items: center;
 }
 .cards-wrapper .gray-card .list-main-wrapper .list-content p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -682,7 +681,7 @@ background-color: #F5F5F5;
     color: #5D6F80;
 }
 .cards-wrapper .gray-card .list-main-wrapper .list-value{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -851,6 +850,7 @@ background-color: #F5F5F5;
     max-width: calc(100% - 16px);
     margin: 8px 8px 8px;
     display: inline-block;
+    border: 1px solid var(--primary);
 }
 .btns-section .cta-btn::after{
     content: '';
@@ -877,7 +877,7 @@ background-color: #F5F5F5;
 }
 
 .faq-heading{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -908,7 +908,7 @@ background-color: #F5F5F5;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s all;
     position: relative;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1024,7 +1024,7 @@ background-color: #F5F5F5;
     width: 170px;
     margin-right: 40px;
     text-align: right;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1059,7 +1059,7 @@ background-color: #F5F5F5;
       transform: translateX(-50%);
       text-align: center;
       transition: left 1s linear;
-      font-family: 'Poppins';
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
@@ -1086,7 +1086,7 @@ object-fit: contain;
 }
 .bottom-slider .bottomSwiper::after{
     content: '';
-    width:100px;
+    width:105px;
     height: 100%;
     position: absolute;
     right: 0;
@@ -1096,7 +1096,7 @@ object-fit: contain;
 }
 .bottom-slider .bottomSwiper::before{
     content: '';
-    width:100px;
+    width:105px;
     height: 100%;
     position: absolute;
     left: 0;
@@ -1145,7 +1145,7 @@ object-fit: contain;
 }
 
 .bottom-slider .bottomSwiper .swiper-wrapper .swiper-slide .inner-slider .slider-overlay .slider-heading{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -1202,7 +1202,7 @@ object-fit: contain;
     object-fit: contain;
 }
 .footer-wrapper .container .footer-left-col h3{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -1230,7 +1230,7 @@ object-fit: contain;
     object-fit: contain;
 }
 .footer-wrapper .container .footer-left-col .footer-left-content .footer-left-col-links p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1258,7 +1258,7 @@ object-fit: contain;
 }
 .footer-right-col .footer-right-inner p{
     max-width: 612px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -1335,7 +1335,7 @@ margin-right: 43px;
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1418,7 +1418,7 @@ margin-right: 43px;
 }
 .pg-value{
     position: absolute;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -1438,7 +1438,7 @@ margin-right: 43px;
 }
 
 .progress-bar .pg-title h4 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

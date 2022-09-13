@@ -214,7 +214,7 @@
     }
 
     .mobile-menu .mobile-top-menu li a{
-        font-family: 'Poppins';
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 15px;

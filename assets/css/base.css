@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
         url('../fonts/Poppins-Bold.woff') format('woff');
     font-weight: bold;
@@ -185,7 +185,7 @@ img{
 }
 
 body h1, .h1{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -198,7 +198,7 @@ body.dark h1, .h1{
 }
 
 body p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -210,7 +210,7 @@ body p:not(:last-child){
 
 
 body h2{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -218,7 +218,7 @@ body h2{
 }
 
 body h3{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -228,7 +228,7 @@ body a{
     text-decoration: none;
 }
 .card-heading{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -259,7 +259,7 @@ body ul:not([class])> li{
 }
 
 body ul:not([class])> li >a{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -291,7 +291,7 @@ form{
     background: #F5F5F5;
     outline: none;
     border: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -301,7 +301,7 @@ form{
     border-radius: 10px;
   }
   form input[type=search]::placeholder{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -315,7 +315,7 @@ form{
 
 /*------------- Buttons -------------------*/
 .btn{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -335,7 +335,7 @@ form{
 }
 
 .btn-card{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -366,7 +366,7 @@ form{
 /* Video btn */
 
 .btn-video{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -397,7 +397,7 @@ form{
 /* Video blackbtn */
 
 .btn-black-video{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -430,7 +430,7 @@ form{
 
 }
 .btn-border{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -454,7 +454,7 @@ table{
 
 
 thead > tr >th, .table-container h2{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -466,7 +466,7 @@ thead > tr >th, .table-container h2{
 
 tbody .col-left{
     width: 20%;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -479,7 +479,7 @@ tbody .col-left{
 tbody .col-right{
     /* width: 100%; */
     padding: 0 36px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

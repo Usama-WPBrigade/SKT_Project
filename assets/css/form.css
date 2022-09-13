@@ -60,7 +60,7 @@ position: relative;
 
 }
 .form-main-wrapper .form-container h3, .form-main-wrapper .form-container h2{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -80,7 +80,7 @@ position: relative;
     max-width: 410px;
 }
 .form-main-wrapper .form-container .form-para p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -112,7 +112,7 @@ position: relative;
 
 }
  .form-field .inner-form-wrapper .field-group-row label{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -129,7 +129,7 @@ position: relative;
     margin-bottom: 27px;
 }
 .form-field .inner-form-wrapper .field-group-row input{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -150,7 +150,7 @@ position: relative;
     border: none;
     height: 50px;
     padding: 20px 15px 8px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -166,7 +166,7 @@ position: relative;
 }
 
 .form-field .inner-form-wrapper .field-group-row input[type = text]::placeholder{
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
